@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building a calculator with vanilla JS</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+
+        <div class="output">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
+        </div>
+
+        <div class="keys">
+            <button data-operator class="operator" value="+">+</button>
+            <button data-operator class="operator" value="-">-</button>
+            <button data-operator class="operator" value="*">×</button>
+            <button data-operator class="operator" value="/">÷</button>
+
+            <button data-number class="operator" value="7">7</button>
+            <button data-number class="operator" value="8">8</button>
+            <button data-number class="operator" value="9">9</button>
+
+            <button data-number class="operator" value="4">4</button>
+            <button data-number class="operator" value="5">5</button>
+            <button data-number class="operator" value="6">6</button>
+
+            <button data-number class="operator" value="1">1</button>
+            <button data-number class="operator" value="2">2</button>
+            <button data-number class="operator" value="3">3</button>
+            
+            <button data-number class="operator" value="0">0</button>
+            <button data-number class="decimal" value=".">.</button>
+            <button data-all-clear class="clear-all" value="clear-all-entry">AC</button>
+            <button data-delete class="delete" value="del"><i class="fas fa-backspace"></i></button>
+            <button data-equals class="equal-sign operator" value="=">=</button>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
