@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+     background-image: url(./picture46.avif);
+     background-repeat: no-repeat;
+     background-size: cover;     
+}
+
+.container {
+    border: 5px solid rgb(139, 115, 7);
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    height: 70vh;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background: transparent;
+    display: flex;
+    gap: 5px;
+    align-items: flex-end;
+    justify-content:space-evenly;
+    flex-direction: column;
+    word-wrap:break-word;
+    word-break: break-all;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 7rem;
+    padding: 20px 15px 10px 10px;
+    width: 100%;
+    border: none;
+}
+
+.output .previous-operand {
+    color: rgba(75, 40, 0, 0.88);
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
+    color: rgb(75, 40, 0);
+    font-size: 2.5rem;
+}
+
+button {
+    height: 70px;
+    border-radius: 20px;
+    border: 2px solid rgb(161, 133, 8);
+    background-color: transparent;
+    font-size: 3rem;
+    color: rgb(143, 98, 0);
+}
+
+button:hover {
+    background-color: rgba(189, 140, 7, 0.3);
+    font-weight:900;
+    cursor: pointer;
+
+}
+button:active {
+    background-color: rgba(150, 102, 0, 0.9);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.clear-all {
+    font-size: 37px;
+}
+.clear-all:active {
+    background-color: rgb(199, 64, 64);
+}
+
+.delete {
+    font-size: 37px;    
+}
+.delete:active {
+    background-color: rgb(187, 36, 10);
+}
+
+.equal-sign {
+    height: 100%;
+    grid-area: 2 / 4/ 5 /5; 
+}
+
+.equal-sign:active {
+    background-color: rgba(0, 87, 0, 0.5);
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 0 20px 0 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 0.95rem;
+    }
+    .container {
+        width: 50vw;
+        height: 70vh;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    html {
+        font-size: 0.95rem;
+    }
+    .container {
+        width: 68vw;
+        height: 70vh;
+    }
+}
+
+@media only screen and (min-width: 670px) {
+    html {
+        font-size: 0.95rem;
+    }
+    .container {
+        width: 50vw;
+        height: 70vh;
+    }
+
+}
+
+@media only screen and (min-width: 970px) {
+    html {
+        font-size: 0.95rem;
+    }
+    .container {
+        width: 35vw;
+        height: 70vh;
+    }
+
+}
